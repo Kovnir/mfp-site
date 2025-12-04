@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Kit - Mutate! Fight! Purr!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .presskit-hero {
+            padding: 8rem 0 4rem;
+            text-align: center;
+            background: var(--color-bg-darker);
+        }
+
+        .presskit-hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-accent-gold);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .presskit-hero p {
+            font-size: 1.2rem;
+            color: var(--color-text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .presskit-section {
+            padding: 4rem 0;
+        }
+
+        .presskit-section:nth-child(even) {
+            background: var(--color-bg-darker);
+        }
+
+        .presskit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .presskit-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .presskit-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-primary);
+            box-shadow: 0 10px 30px var(--glow-primary);
+        }
+
+        .presskit-item h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.25rem;
+            color: var(--color-accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .presskit-item p {
+            color: var(--color-text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .download-button {
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent-purple));
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .download-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px var(--glow-primary);
+        }
+
+        .asset-preview {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: rgba(107, 70, 193, 0.1);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-info h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--color-accent-gold);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: var(--color-text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--color-accent-gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">M!F!P!</span>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Back to Main</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="presskit-hero">
+        <div class="container">
+            <h1>Press Kit</h1>
+            <p>Media assets, logos, screenshots, and information for journalists and content creators.</p>
+        </div>
+    </section>
+
+    <!-- Assets Section -->
+    <section class="presskit-section">
+        <div class="container">
+            <h2 class="section-title centered">Assets</h2>
+            <div class="presskit-grid">
+                <div class="presskit-item">
+                    <div class="asset-preview">Logo Preview</div>
+                    <h3>Logos</h3>
+                    <p>High-resolution game logos in various formats</p>
+                    <a href="#" class="download-button">Download</a>
+                </div>
+                <div class="presskit-item">
+                    <div class="asset-preview">Screenshot Preview</div>
+                    <h3>Screenshots</h3>
+                    <p>Game screenshots and promotional images</p>
+                    <a href="#" class="download-button">Download</a>
+                </div>
+                <div class="presskit-item">
+                    <div class="asset-preview">Trailer Preview</div>
+                    <h3>Trailer</h3>
+                    <p>Official game trailer and gameplay videos</p>
+                    <a href="#" class="download-button">Download</a>
+                </div>
+                <div class="presskit-item">
+                    <div class="asset-preview">Press Release</div>
+                    <h3>Press Release</h3>
+                    <p>Official press releases and announcements</p>
+                    <a href="#" class="download-button">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Information -->
+    <section class="presskit-section">
+        <div class="container">
+            <h2 class="section-title centered">Game Information</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--color-border); border-radius: 12px; padding: 2rem;">
+                    <h3 style="font-family: 'Cinzel', serif; color: var(--color-accent-gold); margin-bottom: 1.5rem;">About Mutate! Fight! Purr!</h3>
+                    <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 1.5rem;">
+                        A roguelike deck-builder set in a twisted biblical world, where a lone cat mutates to survive the trials of heaven and the pit. 
+                        Players will build powerful decks, face demonic battles, and evolve their feline warrior through strategic mutations.
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                        <div>
+                            <strong style="color: var(--color-accent-gold);">Genre:</strong>
+                            <p style="color: var(--color-text-muted); margin-top: 0.5rem;">Roguelike Deck-Builder</p>
+                        </div>
+                        <div>
+                            <strong style="color: var(--color-accent-gold);">Platform:</strong>
+                            <p style="color: var(--color-text-muted); margin-top: 0.5rem;">TBA</p>
+                        </div>
+                        <div>
+                            <strong style="color: var(--color-accent-gold);">Release Date:</strong>
+                            <p style="color: var(--color-text-muted); margin-top: 0.5rem;">TBA</p>
+                        </div>
+                        <div>
+                            <strong style="color: var(--color-accent-gold);">Developer:</strong>
+                            <p style="color: var(--color-text-muted); margin-top: 0.5rem;">Kovnir Games</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="presskit-section">
+        <div class="container">
+            <h2 class="section-title centered">Contact</h2>
+            <div class="contact-info" style="max-width: 600px; margin: 0 auto;">
+                <h3>Press Inquiries</h3>
+                <p>For press inquiries, interview requests, or additional media assets, please contact:</p>
+                <p style="margin-top: 1rem;">
+                    <strong style="color: var(--color-accent-gold);">Email:</strong><br>
+                    <a href="mailto:press@mutatefightpurr.com">press@mutatefightpurr.com</a>
+                </p>
+                <p style="margin-top: 1rem;">
+                    <strong style="color: var(--color-accent-gold);">Social Media:</strong><br>
+                    Follow us for the latest updates and announcements.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://sandmanteam.com/" target="_blank" class="sandman-button">
+                        <img src="img/sandmanteam.webp" alt="Sandman Team" class="sandman-logo">
+                    </a>
+                    <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                    <a href="presskit.html" class="footer-link">Press Kit</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://discord.gg/dTB6eBfz" target="_blank" class="social-icon" aria-label="Discord">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/sandmanteam" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/kovnirdev" target="_blank" class="social-icon" aria-label="X">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mutate! Fight! Purr! All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
