@@ -291,32 +291,37 @@ TODO:
             <button class="popup-button" id="popupButton">OK</button>
         </div>
     </div>
+    </div>
+
+    <!-- Consent Popup Modal -->
+    <div id="consentPopup" class="custom-popup">
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+            <button class="popup-close" id="consentPopupClose">&times;</button>
+            <div class="popup-icon">📩</div>
+            <h3 class="popup-title">Confirm Subscription</h3>
+            <div style="text-align: left; font-size: 0.9rem; margin-bottom: 1rem; color: var(--color-text-muted);">
+                <label
+                    style="display: flex; gap: 10px; cursor: pointer; align-items: flex-start; margin-bottom: 0.8rem;">
+                    <input type="checkbox" id="consentCheckbox"
+                        style="margin-top: 4px; accent-color: var(--color-primary);">
+                    <span>
+                        I consent to receiving news, game updates, and special offers via email. I can unsubscribe at
+                        any
+                        time.
+                    </span>
+                </label>
+                <p style="margin-left: 24px; font-size: 0.85rem; opacity: 0.8;">
+                    Your data will be processed in accordance with our <a href="privacy.html"
+                        style="color: var(--color-accent-gold); text-decoration: underline;">Privacy Policy</a>.
+                </p>
+            </div>
+            <button class="popup-button" id="consentConfirmButton" disabled
+                style="opacity: 0.5; cursor: not-allowed;">Subscribe</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
-    <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script type="text/javascript">
-        (function ($) {
-            window.fnames = new Array();
-            window.ftypes = new Array();
-            fnames[0] = 'EMAIL';
-            ftypes[0] = 'email';
-            fnames[1] = 'FNAME';
-            ftypes[1] = 'text';
-            fnames[2] = 'LNAME';
-            ftypes[2] = 'text';
-            fnames[3] = 'ADDRESS';
-            ftypes[3] = 'address';
-            fnames[4] = 'PHONE';
-            ftypes[4] = 'phone';
-            fnames[5] = 'BIRTHDAY';
-            ftypes[5] = 'birthday';
-            fnames[6] = 'MMERGE6';
-            ftypes[6] = 'text';
-            fnames[7] = 'MMERGE7';
-            ftypes[7] = 'text';
-        }(jQuery));
-        var $mcj = jQuery.noConflict(true);
-    </script>
 </body>
 
 </html>
