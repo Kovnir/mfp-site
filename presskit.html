@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
     <style>
         .presskit-hero {
             padding: 8rem 0 4rem;
@@ -138,6 +139,38 @@
 
         .contact-info a:hover {
             color: var(--color-primary);
+        }
+
+        .screenshots-download {
+            text-align: center;
+            margin: 0 0 2.5rem 0;
+        }
+        .screenshots-download a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-accent-gold);
+            text-decoration: none;
+            border: 2px solid var(--color-accent-gold);
+            border-radius: 12px;
+            background: rgba(212, 175, 55, 0.08);
+            transition: all 0.3s ease;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.02em;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15);
+        }
+        .screenshots-download a:hover {
+            color: var(--color-bg-dark);
+            background: linear-gradient(135deg, var(--color-accent-gold), #b8941f);
+            border-color: var(--color-accent-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(212, 175, 55, 0.35);
+        }
+        .screenshots-download a i {
+            font-size: 1.35rem;
         }
 
         .screenshot-category {
@@ -422,6 +455,12 @@
     <section class="presskit-section">
         <div class="container">
             <h2 class="section-title centered">Screenshots</h2>
+            <p class="screenshots-download">
+                <a href="https://drive.google.com/drive/u/3/folders/1hpPCuQigx5Okglxn2YZnjdTcskAM7AbZ" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-cloud-arrow-down" aria-hidden="true"></i>
+                    Download in 4K
+                </a>
+            </p>
 
             <div class="screenshot-category">
                 <h3>Battle</h3>
