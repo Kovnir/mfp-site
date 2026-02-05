@@ -64,15 +64,11 @@ body {
     align-items: center;
 }
 
-.nav-logo .logo-text {
-    font-family: 'Cinzel', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--color-accent-gold), var(--color-primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 0 20px var(--glow-primary);
+.nav-logo .logo-img {
+    height: 2.5rem;
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .nav-menu {
@@ -191,29 +187,18 @@ body {
 }
 
 .hero-title {
-    font-family: 'Cinzel', serif;
-    font-size: clamp(3rem, 8vw, 6rem);
-    font-weight: 700;
     margin-bottom: 1.5rem;
-    line-height: 1.1;
+    line-height: 1;
 }
 
-.title-line {
+.hero-logo {
+    width: min(90vw, 520px);
+    height: auto;
     display: block;
-    background: linear-gradient(135deg, var(--color-accent-gold), var(--color-primary), var(--color-accent-purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 0 40px var(--glow-primary);
+    margin: 0 auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 40px var(--glow-primary));
     animation: glow 3s ease-in-out infinite;
-}
-
-.title-line:nth-child(2) {
-    animation-delay: 0.3s;
-}
-
-.title-line:nth-child(3) {
-    animation-delay: 0.6s;
 }
 
 @keyframes glow {
@@ -630,6 +615,16 @@ body {
 
 .gif-placeholder.small {
     aspect-ratio: 1;
+    position: relative;
+}
+
+.gif-placeholder.small .feature-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .placeholder-content {
@@ -1260,10 +1255,6 @@ body {
 @media (max-width: 480px) {
     .container {
         padding: 0 1rem;
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
     }
 
     .section-title {
