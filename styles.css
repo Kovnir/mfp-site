@@ -64,15 +64,11 @@ body {
     align-items: center;
 }
 
-.nav-logo .logo-text {
-    font-family: 'Cinzel', serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--color-accent-gold), var(--color-primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 0 20px var(--glow-primary);
+.nav-logo .logo-img {
+    height: 2.5rem;
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .nav-menu {
