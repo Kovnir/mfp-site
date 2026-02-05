@@ -615,6 +615,16 @@ body {
 
 .gif-placeholder.small {
     aspect-ratio: 1;
+    position: relative;
+}
+
+.gif-placeholder.small .feature-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .placeholder-content {
