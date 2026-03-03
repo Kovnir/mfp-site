@@ -330,12 +330,14 @@ body {
     background: rgba(15, 23, 42, 0.85);
     border-radius: 999px;
     border: 2px solid var(--color-border);
-    color: var(--color-text);
+    color: #ffffff;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.6);
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .steam-cta-button:hover {
@@ -348,11 +350,33 @@ body {
     height: 30px;
     width: auto;
     display: block;
+    filter: brightness(0) invert(1);
 }
 
 .steam-cta-label {
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.steam-cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+    transform: skewX(-20deg);
+    animation: steamShimmer 3.5s ease-in-out infinite;
+}
+
+@keyframes steamShimmer {
+    0%, 70% {
+        left: -120%;
+    }
+    100% {
+        left: 140%;
+    }
 }
 
 /* Override Mailchimp default styles */
@@ -425,7 +449,7 @@ body {
 
 .email-input {
     width: 100%;
-    max-width: 500px;
+    max-width: 640px;
     padding: 1rem 1.5rem;
     background: rgb(67 64 64 / 15%);
     border: 1px solid var(--color-border);
@@ -999,7 +1023,37 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    align-items: center;
+}
+
+.community .hero-cta {
+    max-width: 800px;
+    width: 100%;
+}
+
+.community .form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     align-items: stretch;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.community .email-input {
+    flex: 1;
+    max-width: none;
+}
+
+@media (max-width: 600px) {
+    .community .form-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .community .email-input {
+        width: 100%;
+    }
 }
 
 .community-subtitle {
@@ -1013,18 +1067,6 @@ body {
     margin-top: 0;
 }
 
-@media (min-width: 768px) {
-    .community-actions {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .community-subscribe,
-    .community-discord {
-        flex: 1;
-    }
-}
 
 /* Footer */
 .footer {
