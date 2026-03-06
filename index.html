@@ -66,11 +66,16 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-media">
-                    <div class="gif-placeholder">
-                        <iframe class="gameplay-video" src="https://www.youtube.com/embed/Z2Lz1MsmwhQ?si=hbLdI1DB2Jkrtd5U"
+                    <div class="gif-placeholder clickable" id="openVideoBtn">
+                        <iframe class="gameplay-video" src="https://www.youtube.com/embed/Z2Lz1MsmwhQ?si=hbLdI1DB2Jkrtd5U&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=Z2Lz1MsmwhQ"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="video-play-overlay">
+                            <svg class="play-icon-svg" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="about-text">
@@ -351,6 +356,19 @@
             </div>
             <button class="popup-button" id="consentConfirmButton" disabled
                 style="opacity: 0.5; cursor: not-allowed;">Subscribe</button>
+        </div>
+    </div>
+
+    <!-- Video Lightbox -->
+    <div id="videoLightbox" class="video-lightbox">
+        <div class="video-lightbox-overlay"></div>
+        <div class="video-lightbox-inner">
+            <button class="video-lightbox-close" id="videoLightboxClose">&times;</button>
+            <div class="video-lightbox-content">
+                <iframe id="videoLightboxIframe" src="" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 

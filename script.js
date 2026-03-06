@@ -482,3 +482,54 @@ const addScrollAnimations = () => {
 // Initialize scroll animations
 addScrollAnimations();
 
+
+// Video Lightbox Functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const videoLightbox = document.getElementById('videoLightbox');
+    const videoLightboxIframe = document.getElementById('videoLightboxIframe');
+    const openVideoBtn = document.getElementById('openVideoBtn');
+    const closeVideoBtn = document.getElementById('videoLightboxClose');
+    const videoOverlay = document.querySelector('.video-lightbox-overlay');
+    
+    // The main trailer URL with autoplay and sound
+    const trailerUrl = "https://www.youtube.com/embed/Z2Lz1MsmwhQ?si=hbLdI1DB2Jkrtd5U&autoplay=1&mute=0&rel=0";
+
+    const openVideo = () => {
+        if (!videoLightbox || !videoLightboxIframe) return;
+        videoLightboxIframe.src = trailerUrl;
+        videoLightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    };
+
+    const closeVideo = () => {
+        if (!videoLightbox || !videoLightboxIframe) return;
+        videoLightbox.classList.remove('active');
+        videoLightboxIframe.src = ''; // Stop video
+        document.body.style.overflow = ''; // Restore scrolling
+    };
+
+    if (openVideoBtn) {
+        openVideoBtn.addEventListener('click', openVideo);
+    }
+
+    if (closeVideoBtn) {
+        closeVideoBtn.addEventListener('click', closeVideo);
+    }
+
+    if (videoOverlay) {
+        videoOverlay.addEventListener('click', closeVideo);
+    }
+
+    // Also close on background click and Escape key
+    if (videoLightbox) {
+        videoLightbox.addEventListener('click', (e) => {
+            if (e.target === videoLightbox) closeVideo();
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && videoLightbox && videoLightbox.classList.contains('active')) {
+            closeVideo();
+        }
+    });
+});
