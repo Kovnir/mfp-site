@@ -482,3 +482,5 @@ const addScrollAnimations = () => {
 // Initialize scroll animations
 addScrollAnimations();
 
+
+

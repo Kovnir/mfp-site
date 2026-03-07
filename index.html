@@ -66,12 +66,17 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-media">
-                    <div class="gif-placeholder">
-                        <iframe class="gameplay-video" src="https://www.youtube.com/embed/Z2Lz1MsmwhQ?si=hbLdI1DB2Jkrtd5U"
+                    <a href="https://www.youtube.com/watch?v=Z2Lz1MsmwhQ" target="_blank" rel="noopener noreferrer" class="gif-placeholder clickable" id="openVideoBtn" style="text-decoration: none;">
+                        <iframe class="gameplay-video" src="https://www.youtube.com/embed/Z2Lz1MsmwhQ?si=hbLdI1DB2Jkrtd5U&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=Z2Lz1MsmwhQ"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                        <div class="video-play-overlay">
+                            <svg class="play-icon-svg" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                    </a>
                 </div>
                 <div class="about-text">
                     <h2 class="section-title">About the Game</h2>
@@ -353,6 +358,8 @@
                 style="opacity: 0.5; cursor: not-allowed;">Subscribe</button>
         </div>
     </div>
+
+
 
     <script src="script.js"></script>
 </body>
