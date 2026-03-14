@@ -147,57 +147,36 @@
                     Purr!</a>. It’s nice to meet you!</p>
             <p>Fully understanding the gaming community's stance on the use of generative AI in game development, I
                 decided to create this page to clear the air before any questions arise.</p>
-            <p>I personally have a bias toward AI in games. Like all of us, I want to play "hand-crafted" games built by
-                industry professionals, games with unique ideas and worlds rather than consuming the "averaged-out"
-                mediocrity that AI often offers.</p>
-            <p>Therefore, I believe it is only fair to walk you through our AI pipeline and explain why we believe it is
-                ethical, beneficial to you as players, and certainly not a "magic button" that makes the game for us.
-            </p>
 
             <h2>1. We are not trying to shrink the team by replacing people with AI agents.</h2>
             <p>SandmanTeam consists of 3 people. Despite my passion for automation and professional pipelines, our
-                previous game took 9 years to develop. We wanted to make everything in the best possible way, but the
-                task was too ambitious for such a small team. <a
-                    href="https://store.steampowered.com/app/1266210/Through_the_Nightmares/" target="_blank">Through
-                    the Nightmares</a> was well-received by players and currently holds 98% positive reviews on Steam.
-                However, the project was a commercial failure. We spent too much time making the game, and during that
-                time, standard hardcore platformers turned into a very oversaturated market that few people care about
-                anymore.</p>
-            <p>Back then, our only AI tool was GitHub Copilot. It’s a tool that helps you write code by completing lines
-                for you, much like the "smart T9" on your phone.</p>
-            <p>When we started our new game, it was obvious that the old pipeline wouldn't work. We didn't want to
-                release our deckbuilder when everyone had already forgotten about this genre. Fortunately, AI has
-                evolved enough to help us efficiently handle part of our tasks.</p>
-            <p>Our goal was never to reduce the team. On the contrary, as a team using AI, we can do much more than
+                previous game took 9 years to develop. When we started our new game, it was obvious that the old
+                pipeline wouldn't work. Fortunately, AI has evolved enough to help us efficiently handle part of our
+                tasks.</p>
+            <p><strong>Our goal was never to reduce the team.</strong> On the contrary, as a team using AI, we can do much more than
                 before. For us, it is simply the productivity tool we’ve been looking for, a chance to create the
                 projects we truly love.</p>
 
             <h2>2. AI gives us the opportunity to maintain creative freedom.</h2>
             <p>We are a self-funded team. Our main resources are our own energy and sleepless nights. Hiring contractors
-                for tasks that AI can handle would not only take more time but would also force us to seek outside
-                funding. Seeking publishers is a long and difficult process, and while we searched, we would have to
-                pause work on the game itself.</p>
-            <p>A larger budget brings larger risks. By making the game faster and cheaper, we take fewer risks and can
-                set a price tag below the market average. A publisher likely wouldn't agree to that. Furthermore, our
-                game touches on controversial religious themes. With outside investment, we would likely lose part of
-                our creative freedom and be forced to smooth over the edges.</p>
-            <p>AI allows us to build the project exactly as we see it without needing outside investment. We might still
-                look for a publisher to lower our risks or hand over some tasks, but it isn't a priority for us. This
-                way, we can choose our partners and won't have to sacrifice our ideas. And, of course, this helps us
-                keep the game's future price from going up.</p>
+                for tasks that AI can handle would not only take more time but would also force us to seek a publisher
+                to get funding.</p>
+            <p>A larger budget brings larger risks. By making the game faster and cheaper, we can set a price tag
+                below the market average. A publisher likely wouldn't agree to that. Furthermore, our game touches on
+                controversial religious themes. With outside investment, we would lose part of our creative freedom
+                and be forced to smooth over the edges.</p>
+            <p>AI allows us to build the project exactly as we see it without needing outside investment. And, of
+                course, this helps us <strong>keep the game's future price from going up</strong>.</p>
 
             <h2>3. Game quality and player experience come first.</h2>
-            <p>AI is often associated with mediocre quality, mainly when the raw output is delivered directly to the end
-                consumer. As I mentioned above, we treat AI as a productivity tool. It makes up only a small part of our
-                pipeline, where it performs exceptionally well. I can’t claim that not a single pixel in the final game
-                was generated, but no generation makes it through without manual refinement.</p>
-            <p>AI content is prone to specific artifacts, and when you've been drawing all day, it's easy to miss small
-                details. Because of this, we communicate with the community in our Discord via the <a
-                    href="https://discord.gg/DR94tyQsXx" target="_blank">#AI-artifact-hunters</a> channel. There, the
-                community points out small mistakes that made it into the demo, and we quickly fix and polish
-                them.</p>
+            <p>We treat AI as a productivity tool. It makes up only a small part of our pipeline, where it performs
+                exceptionally well. <strong>No generation makes it through without manual refinement</strong>.</p>
+            <p>We communicate with the community in our Discord via the <a href="https://discord.gg/DR94tyQsXx"
+                    target="_blank">#AI-artifact-hunters</a> channel. There, the
+                community points out small AI mistakes that made it into the demo, and we quickly fix and polish them.
+            </p>
 
-            <h2>Now about the pipelines: where and how we actually use AI.</h2>
+            <h2>Now, about the pipelines: where and how we actually use AI.</h2>
 
             <h3>2D Art</h3>
             <p><strong>Characters</strong></p>
@@ -206,12 +185,14 @@
                     drafts) and sent to a neural network. For style references, we use already finalized art assets from
                     the game. Long iterations with AI lead us to a result that satisfies us all, or to a rethinking of
                     the idea if we can't make something cool and high-quality.</li>
-                <li>Next, in Photoshop (without AI), we refine the generated art, paint in the details we want to see,
+                <li>Next, in Photoshop <strong>(without AI)</strong>, we refine the generated art, paint in the details
+                    we want to see,
                     and clean it of artifacts.</li>
-                <li>Then, again manually in Photoshop, we cut the art into layers and paint what’s underneath them.</li>
-                <li>We import the finished layers into Spine, where we create animations manually without any AI help.
-                </li>
-                <li>Finally, we manually integrate the character into Unity and set it up.</li>
+                <li>Then, again, <strong>manually</strong> in Photoshop, we cut the art into layers and paint what’s
+                    underneath them.</li>
+                <li>We import the finished layers into Spine, where we create animations <strong>manually without any AI
+                        help</strong>.</li>
+                <li>Finally, we <strong>manually</strong> integrate the character into Unity and set it up.</li>
             </ul>
 
             <p><strong>Cards and Items</strong></p>
@@ -221,70 +202,65 @@
 
             <h3>3D Art</h3>
             <ul>
-                <li>AI is not involved here. Map rooms, battlefields, and everything else are modeled, rigged, and
-                    assembled manually.</li>
-                <li>We use other ways to optimize content creation, such as the Unity Asset Store and assets from our
-                    previous game, so AI doesn't provide any speedup here.</li>
+                <li><strong>AI is not involved here.</strong> Map rooms, battlefields, and everything else are modeled,
+                    rigged, and
+                    assembled <strong>manually</strong>. We use other ways to optimize content creation, such as the
+                    Unity Asset Store
+                    and assets from our previous game, so AI doesn't provide any speedup here.</li>
             </ul>
 
             <h3>Shaders and VFX</h3>
             <ul>
-                <li>The same goes here: no AI, everything is done by hand.</li>
+                <li>The same goes here: <strong>no AI, everything is done by hand.</strong></li>
             </ul>
 
             <h3>Code</h3>
             <ul>
-                <li>We use Cursor, which generates a significant amount of code.</li>
-                <li>It handles variations of things already in the project very well, like pop-ups, new abilities,
-                    monsters, cards, and so on.</li>
-                <li>Also, we use several AIs for code review to minimize the chance of bugs making it into the build and
-                    to reduce testing time for new versions.</li>
+                <li>We use Cursor, which generates a significant amount of code. It handles variations of things already
+                    in the project very well, like pop-ups, new abilities, monsters, cards, and so on.</li>
             </ul>
 
             <h3>UI and Icons</h3>
             <ul>
-                <li>Everything is drawn and assembled exclusively by hand.</li>
+                <li>Everything is drawn and assembled <strong>exclusively by hand</strong>.</li>
             </ul>
 
             <h3>Animations</h3>
             <ul>
-                <li>All the animations you see in the game are made manually without the use of AI.</li>
+                <li>All the animations you see in the game are made <strong>manually without the use of AI</strong>.
+                </li>
             </ul>
 
             <h3>Localization</h3>
             <ul>
-                <li>We use AI for quick localization and then fix it based on community feedback.</li>
-                <li>Before the release, we will hire professional translators to give the game a truly high-quality
-                    translation.</li>
+                <li>We use AI for quick localization and then fix it based on community feedback. Before the release,
+                    we will hire professional translators to give the game a truly high-quality translation.</li>
             </ul>
 
             <h3>Music and Sounds</h3>
             <ul>
-                <li>All music and sounds in the game are created manually.</li>
-                <li>We might use AI to create music or sounds for our marketing materials, but it won’t leak into the
-                    game itself.</li>
-                <li>We believe that music is crucial for providing the right player experience.</li>
+                <li>All music and sounds in the game are <strong>created manually</strong>. We might use AI to create
+                    music or sounds for
+                    our marketing materials, but it won’t leak into the game itself. We believe that music is crucial
+                    for providing the right player experience.</li>
             </ul>
 
             <h3>Game Design</h3>
             <ul>
-                <li>We use analytics and automation that allow us to find imbalanced items and cards at early stages. AI
-                    and LLMs only participate in this by helping us generate SQL queries for the database.</li>
                 <li>We might ask a neural network for advice on which biblical plot an item could be linked to, or
-                    analyze reviews of other games to better understand communities' needs, but the final decision is
-                    always ours.</li>
+                    analyze reviews of other games to better understand communities' needs, but <strong>the final decision is
+                    always ours</strong>.</li>
             </ul>
 
             <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
                 <p>I hope that now that you clearly understand how we use AI, it will be easier to accept its presence
                     in the project. This is the only way our small team can release truly fast and high-quality updates
-                    for our demo. If this is unacceptable to you, I understand. You always have the option not to buy
-                    the game, the choice is yours.</p>
+                    for our demo.</p>
                 <p>If you have any questions, we’ll be happy to discuss them in our <a
                         href="https://discord.gg/DR94tyQsXx" target="_blank">Discord</a>!</p>
                 <p>See you soon!<br>
                     <strong>Albert Kovnir and Sandman Team</strong><br>
-                    March 6, 2026
+                    March 14, 2026
                 </p>
             </div>
         </div>
