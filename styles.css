@@ -422,6 +422,30 @@ body {
     }
 }
 
+.itch-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.15rem 3rem;
+    background: rgba(15, 23, 42, 0.85);
+    border-radius: 999px;
+    border: 2px solid var(--color-border);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.6);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.itch-cta-button:hover {
+    transform: translateY(-2px);
+    border-color: #fa5c5c;
+    box-shadow: 0 15px 40px rgba(250, 92, 92, 0.3);
+}
+
 /* Override Mailchimp default styles */
 #mc_embed_signup form {
     display: flex !important;
